@@ -1,2 +1,2 @@
 # til
-Stuff I learned that day
+> Today I Learned
