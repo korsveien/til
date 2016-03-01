@@ -5,7 +5,7 @@ In order to list files containing a specific string from the current working dir
 
 | Option      | Description |
 --------------|---------------
-| --inlcude | Only include files with given pattern |
+| --include | Only include files with given pattern |
 | -r | Search recursively |
 | -i | Ignore case |
 | -l | Only list files |
