@@ -3,4 +3,4 @@
 
 Repository containing snippets of knowledge. 
 
-I write one (sometimes several) each day.
+I write one (almost) each day.
