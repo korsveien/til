@@ -1,6 +1,6 @@
-The following query will provide a table describing the free tablespace of an oracel database
-
-```column "Tablespace" format a13
+The following query will provide a table describing the size of tablespaces (free/used):
+```
+column "Tablespace" format a13
 column "Used MB"    format 99,999,999
 column "Free MB"    format 99,999,999
 column "Total MB"   format 99,999,999
@@ -28,4 +28,20 @@ from
       tablespace_name
    ) fs
 where
-   df.tablespace_name = fs.tablespace_name;```
+   df.tablespace_name = fs.tablespace_name;
+```
+   
+For an overview of the number of files for each tablespace:   
+```
+select TABLESPACE_NAME, count(FILE_NAME) from dba_data_Files group by TABLESPACE_NAME;
+```
+
+To get the names of the data files:
+```
+select Tablespace_Name, File_Name from Dba_Data_Files;
+```
+
+To add a datafile to a tablespace:
+```
+alter tablespace <tablespace_name> add datafile '+DATA/<sid>/datafile/<name>.dbf' size 10m autoextend on maxsize unlimited;
+```
