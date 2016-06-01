@@ -1,4 +1,4 @@
-In order to remove large blobs from the git repo, the BFG is a very useful tool:
+In order to remove large blobs or specific files from the git repo, the BFG is a very useful tool:
 
 https://rtyley.github.io/bfg-repo-cleaner/
 
@@ -15,5 +15,11 @@ git reflog expire --expire=now --all && git gc --prune=now --aggressive
 ```
 
 to prune them.
+
+Similarly, do
+```
+bfg --delete-files huge-file.xml  my-repo.git
+```
+to remove a specific file.
 
 The BFG only removes blobs which is not part of your current working tree.
