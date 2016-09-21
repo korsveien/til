@@ -1,1 +1,1 @@
-```git remote set-url --push --add <name> <url>```
+```git remote set-url --add --push <name> <url>```
