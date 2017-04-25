@@ -1,5 +1,5 @@
 ## !IMPORTANT!
-*Before doing anything, make sure everyone has pushed their local branchs, and make a backup of your repo!*
+*Before doing anything, make sure everyone has pushed their local branches, and make a backup of your repo!*
 
 ## Description
 
