@@ -5,7 +5,7 @@
 
 1. Bob removes passwords from the repos and commits `git commit -m "Remove passwords"`
 2. Bob removes passwords from the git history using bfg `bfg --replace-text list-of-passwords-to-remove.txt <dir>`
-3. Bob expires the git reflog and garbage collects `git reflog expire --expire=now --all && git gc --prune=now --aggresive`
+3. Bob expires the git reflog and garbage collects `git reflog expire --expire=now --all && git gc --prune=now --aggressive`
 4. Bob pushes master to upstream using the -f flag (force push) `git push -f`
 5. Bob then also remembers to push all the tags from the old master onto the new `git push -f --tags`
 6. Alice pulls master, she will notice that the master branch has received an forced update
