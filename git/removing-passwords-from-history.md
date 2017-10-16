@@ -2,7 +2,9 @@
 *Before doing anything, make sure everyone has pushed their local branches, and make a backup of your repo!*
 
 ## Scenario
-Bob wants to remove all passwords and sensitive data from the repo in order to open source his code. He knows he need to remove the data from the git history as well, and since he is in a team this will mess up the local copies of the repo for everyone. So what does he do? 
+Bob wants to remove all passwords and sensitive data from the repo in order to open source his code. He knows he need to remove the data from the git history as well, and since he is in a team this will mess up the local copies of the repo for everyone. 
+
+So what does he do? 
 
 ## How to solve it
 
