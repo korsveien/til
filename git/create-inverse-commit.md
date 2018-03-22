@@ -4,4 +4,4 @@ In order to create a commit wich reverses the lates commit you made, simply use:
 
 In order to revert the last n commits on master use:
 
-`git revert master~1..master`
+`git revert master~<n>..master`
