@@ -6,4 +6,4 @@ To encrypt a file with your public gpg key, and then decrypt it using your priva
 4. On recipient end import the public key with `gpg --import <filename>.gpg`
 5. Encrypt a file `gpg --output <encrypted-filename>.gpg --encrypt --recipient <e-mail> <filename>`
 6. Send encrypted file to the machine with the private key
-7. On machine with the private key, decrypt the file with: `gpg --output <decrypted-filename> --decrypt <encrypted-filename>
+7. On machine with the private key, decrypt the file with: `gpg --output <decrypted-filename> --decrypt <encrypted-filename>`
